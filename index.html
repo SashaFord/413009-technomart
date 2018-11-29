@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -67,7 +69,7 @@
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами,заехав в наш офис:</p>
     <img src="img/map.jpg" width="300" height="158" alt="Карта">
-    <a class="button" href="write to us">Заблудились? Напишите нам!</a>
+    <a class="button" href="write-to-us">Заблудились? Напишите нам!</a>
   </section>
 
   <footer class="main-footer">
@@ -126,6 +128,24 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
     </p>
   </footer>
+
+  <div class="modal">
+    <form class="user-form" method="post" action="https://echo.htmlacademy.ru">
+    <p>
+      <label for="user-name">Ваше имя:</label>
+      <input id="user-name" type="text" name="full-name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="user-mail">Ваш e-mail:</label>
+      <input id="user-mail" type="text" name="user-mail" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="user-post">Текст письма:</label>
+      <input id="user-post" type="text" name="user-post" placeholder="В свободной форме">
+    </p>
+    <button type="submit" class="modal-button">отправить</button>
+  </div>
+</form>
 </body>
 
 </html>
