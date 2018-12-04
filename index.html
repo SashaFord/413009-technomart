@@ -4,16 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
-  <!--<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="main-header">
     <nav class="header-navigation">
-      <img src="img/index.logo.svg" width="220" height="47" alt="Логотип Техномарт">
-      <input type="search" name="Поиск" placeholder="Поиск">
+      <!--<img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарт">-->
+      <h1 class="logo">Техномарт</h1>
+      <input class="search" type="search" name="Поиск" value="Поиск">
 
       <ul class="user-navigation">
         <li>
@@ -23,10 +25,12 @@
           <a href="basket.html"> Корзина</a>
         </li>
         <li>
-          <a href="request.html">Оформить заказ</a>
+          <a href="request.html" class="header-order">Оформить заказ</a>
         </li>
       </ul>
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+
+      <div class="header-wraper"></div>
+      <p class="lead">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
       <div class="contacts">
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -48,6 +52,7 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
+    </div>
   </header>
 
   <section class="about">
@@ -62,9 +67,9 @@
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
-
     <a class="button" href="details.html"> Подробнее о компании</a>
   </section>
+
   <section class="contact-map">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами,заехав в наш офис:</p>
@@ -74,7 +79,9 @@
 
   <footer class="main-footer">
     <div class="footer-top">
-      <img src="img/footer.logo.png" width="780" height="230" alt="Логотип Техномарт">
+      <!-- <img src="img/footer.logo.png" width="780" height="230" alt="Логотип Техномарт"> -->
+      <span class="logo">Техномарт</span>
+
       <nav class="footer-navigation">
         <ul>
           <li><a href="company.html">Компания</a></li>
@@ -87,9 +94,10 @@
     </div>
 
     <div class="footer-middle">
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-      <nav class="footer-navigation-yellow">
+      <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
+
+      <nav class="footer-navigation footer-navigation-yellow">
         <ul>
           <li><a href="material.html">Материалы</a></li>
           <li><a href="equipment.html">Техника</a></li>
@@ -100,7 +108,8 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&#169; 2010–2017 Компания &quot;Техномарт&quot; Все права защищены</p>
+      <p class="copyright">&#169; 2010–2017 Компания &quot;Техномарт&quot; Все права защищены</p>
+
       <ul class="social-block">
         <li>
           <a class="social-button" href="https://vk.com" target="_blank">
@@ -118,18 +127,20 @@
           </a>
         </li>
       </ul>
+
+      <p class="support">
+        Обратная связь:
+        <a href="mailto:htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+      <p class="creator">
+        Разработано &mdash;
+        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      </p>
     </div>
-    <p>
-      Обратная связь:
-      <a href="mailto:htmlacademy.ru">mail@htmlacademy.ru</a>
-    </p>
-    <p>
-      Разработано &mdash;
-      <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-    </p>
   </footer>
 
   <div class="modal">
+    <button class="close" type="button">закрыть</button>
     <form class="user-form" method="post" action="https://echo.htmlacademy.ru">
       <p>
         <label for="user-name">Ваше имя:</label>
@@ -141,9 +152,11 @@
       </p>
       <p>
         <label for="user-post">Текст письма:</label>
-        <input id="user-post" type="text" name="user-post" placeholder="В свободной форме">
+        <textarea id="user-post" placeholder="В свободной форме"></textarea>
       </p>
-      <button type="submit" class="modal-button">отправить</button>
+      <div class="modal-footer">
+      <button type="submit" class="modal-button button">отправить</button>
+    </div>
   </div>
   </form>
 
