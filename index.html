@@ -6,6 +6,7 @@
   <title>Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet" >
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -13,16 +14,16 @@
 
   <header class="main-header">
     <nav class="header-navigation">
-      <!--<img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарт">-->
-      <h1 class="logo">Техномарт</h1>
-      <input class="search" type="search" name="Поиск" value="Поиск">
+     <img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарт"> 
+     
+      <input class="search" type="search" name="Поиск" placeholder="Поиск">
 
-      <ul class="user-navigation">
+      <ul class="user-navigation list-style">
         <li>
           <a href="bookmarks.html"> Закладки</a>
         </li>
         <li>
-          <a href="basket.html"> Корзина</a>
+          <a href="basket.html" class="basket"> Корзина</a>
         </li>
         <li>
           <a href="request.html" class="header-order">Оформить заказ</a>
@@ -37,12 +38,12 @@
         <p>г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
       </div>
 
-      <ul class="registration">
+      <ul class="registration list-style">
         <li><a href="login.html">Войти</a></li>
         <li><a href="reg.html">Регистрация</a></li>
       </ul>
 
-      <ul class="site-navigation">
+      <ul class="site-navigation list-style">
         <li><a href="main.html">Главная</a></li>
         <li><a href="company.html">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -51,6 +52,7 @@
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
+      </nav>
     </nav>
     </div>
   </header>
@@ -62,19 +64,19 @@
     <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
       компаниями:</p>
 
-    <ul class="transport-list">
+    <ul class="transport-list list-style">
       <li>Деловые линии</li>
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
-    <a class="button" href="details.html"> Подробнее о компании</a>
+    <a class="button button-primary" href="details.html"> Подробнее о компании</a>
   </section>
 
   <section class="contact-map">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами,заехав в наш офис:</p>
     <img src="img/map.jpg" width="300" height="158" alt="Карта">
-    <a class="button" href="write-to-us.html">Заблудились? Напишите нам!</a>
+    <a class="button button-primary" href="write-to-us.html">Заблудились? Напишите нам!</a>
   </section>
 
   <footer class="main-footer">
@@ -83,7 +85,7 @@
       <span class="logo">Техномарт</span>
 
       <nav class="footer-navigation">
-        <ul>
+        <ul class="list-style">
           <li><a href="company.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -98,7 +100,7 @@
       <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
 
       <nav class="footer-navigation footer-navigation-yellow">
-        <ul>
+        <ul class="list-style">
           <li><a href="material.html">Материалы</a></li>
           <li><a href="equipment.html">Техника</a></li>
           <li><a href="tool.html">Инструмент</a></li>
@@ -110,7 +112,7 @@
     <div class="footer-bottom">
       <p class="copyright">&#169; 2010–2017 Компания &quot;Техномарт&quot; Все права защищены</p>
 
-      <ul class="social-block">
+      <ul class="social-block list-style">
         <li>
           <a class="social-button" href="https://vk.com" target="_blank">
             <img src="img/icon-vk.svg" alt="ВКонтакте" width="26" height="15">
@@ -155,7 +157,7 @@
         <textarea id="user-post" placeholder="В свободной форме"></textarea>
       </p>
       <div class="modal-footer">
-      <button type="submit" class="modal-button button">отправить</button>
+      <button type="submit" class="modal-button button button-primary">отправить</button>
     </div>
   </div>
   </form>

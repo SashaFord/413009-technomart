@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 13px;
     line-height: 1.84;
@@ -12,70 +11,58 @@ a {
     text-decoration: none;
 }
 
-h2, .title-large {
+h2 {
     color: #000000;
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
+.list-style {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+}
+
 .button  {
-    color: #ffffff;
-    background-color: #ee3643;
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
 }
 
-.button:hover {
+.filters {
+    font-family: "PT Sans", Arial, sans-serif;
+}
+
+.button-primary {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+.button-primary:hover {
     background-color: #ca2c37;
 }
 
-.button:active {
+.button-primary:active {
     background-color: #ba2732;
 }
 
 .button-white {
     background-color: #ffffff;
-    font-size: 14px;
-    line-height: 1.28;
-    text-transform: uppercase;
-}
-
-.button-white:hover {
-    color: #ee3643;
-}
-
-.button-white:active {
-    color: #c5c5c5;
+    color: #1d2739
 }
 
 
 /* HEADER */
+
 .header-navigation {
     background-color: #293449;
 }
 
-.logo {
-    color: #ffffff;
-    font-size: 24px;
-    line-height: 1;
-    background-color: #ee3643;
-}
-
-.logo:hover {
-    background-color: #ca2c37;
-}
-
-.logo:active {
-    background-color: #ba2732;
-}
-
 .search {
     color: #ffffff;
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: inherit;
     font-size: 17px;
     line-height: 1.05;
     background-color: transparent; 
@@ -90,15 +77,10 @@ h2, .title-large {
     color: #000000
 }
 
-.user-navigation {
-    list-style-type: none
-}
-
 .user-navigation a {
     color: #ffffff;
     font-size: 17px;
     line-height: 1.05;
-    text-decoration: none;
 }
 
 .user-navigation a:hover {
@@ -117,11 +99,11 @@ h2, .title-large {
     background-color: #63a63e;
 }
 
-.user-navigation .header-order:hover {
+.header-order:hover {
     background-color: #5fbb2d;
 }
 
-.user-navigation .header-order:active {
+.header-order:active {
     background-color: #518534;
 }
 
@@ -149,19 +131,12 @@ h2, .title-large {
     line-height: 1.7;
 }
 
-.registration {
-    list-style-type: none;      
-}
-
-.registration a, .log-out {
+.registration a, 
+.log-out {
     background-color: #ffffff;
     color: #000000;
     font-size: 21px;
     line-height: 1;
-}
-
-.log-out:hover {
-    color: #000000;
 }
 
 .log-out:active {
@@ -176,14 +151,6 @@ h2, .title-large {
     color: #c5c5c5;
 }
 
-.log-out {
-    background-color: rgb(255, 255, 255);
-}
-
-.cabinet {
-    list-style-type: none;
-}
-
 .cabinet a {
     color: #32425c;
     font-size: 16px;
@@ -193,7 +160,6 @@ h2, .title-large {
 
 .cabinet a:hover {
     color: #ee3643;
-
 }
 
 .cabinet a:active {
@@ -202,7 +168,6 @@ h2, .title-large {
 
 .site-navigation {
     background-color: #32425c;
-    list-style-type: none;
 }
 
 .site-navigation a {
@@ -224,38 +189,31 @@ h2, .title-large {
 
 /* CATALOG */
 
-.breadcrumbs {
-    list-style-type: none;
-}
-
 .breadcrumbs a, .breadcrumps-current {
     color: #000000;
-    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 1.3;
     text-transform: uppercase;
 }
 
 .page-title {
+    color: #32425c;
+    font-size: 30px;
     background-color: #f2f6f8;
+    text-transform: uppercase;
+    line-height: 1;
 }
 
 .filter-name {
     color: #000000;
-    font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.7;
     text-transform: uppercase;
 }
 
-.filter-list {
-    list-style-type: none;
-}
-
 .filter-option label {
     color: #000000;
-    font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 1.3;
     text-transform: uppercase;
@@ -268,15 +226,10 @@ h2, .title-large {
 
 .filter-button {
     background-color: #ffffff;
-    color: #000000;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 13px;
+    color: inherit;
+    font-size: inherit;
     line-height: 1.3;
     text-transform: uppercase;
-}
-
-.catalog-list {
-    list-style-type: none;
 }
 
 .catalog-item {
@@ -285,7 +238,6 @@ h2, .title-large {
 
 .catalog-item h2 {
     color: #000000;
-    font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.1;
@@ -293,7 +245,6 @@ h2, .title-large {
 
 .old-price {
     color: #999999;
-    font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.05;
@@ -303,7 +254,6 @@ h2, .title-large {
 
 .price {
     color: #ffffff;
-    font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.05;
@@ -313,9 +263,6 @@ h2, .title-large {
 .pay {
     background-color: #63a63e;
     color: #ffffff;
-    font-size: 14px;
-    line-height: 1.28;
-    text-transform: uppercase;
 }
 
 .pay:hover {
@@ -328,9 +275,6 @@ h2, .title-large {
 
 .to-bookmarks {
     color: #32425c;
-    font-size: 14px;
-    line-height: 1.28;
-    text-transform: uppercase;
 }
 
 .to-bookmarks:hover {
@@ -357,10 +301,6 @@ h2, .title-large {
     line-height: 1.8;
 }
 
-.transport-list {
-    list-style-type: none;
-}
-
 .transport-list li {
     font-size: 18px;
     line-height: 1.1;
@@ -381,15 +321,10 @@ h2, .title-large {
     line-height: 1.3;
 }
 
-.footer-navigation ul {
-    list-style-type: none;
-}
-
 .footer-navigation a {
     color: #f3f7f9;
     font-size: 18px;
     line-height: 1.3;
-    list-style-type: none;
 }
 
 .footer-navigation a:hover {
@@ -397,7 +332,6 @@ h2, .title-large {
 }
 
 .footer-navigation a:active {
-    text-decoration: none;
     opacity: 0.5;
 }
 
@@ -413,10 +347,6 @@ h2, .title-large {
     color: #ffffff;
     font-size: 16px;
     line-height: 1.1;
-}
-
-.social-block {
-    list-style-type: none;
 }
 
 .social-button {
@@ -445,7 +375,6 @@ h2, .title-large {
 .support a:active, 
 .creator a:active {
     color: #ee3643;
-    text-decoration: none;
 }
 
 /* END FOOTER */
