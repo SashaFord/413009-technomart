@@ -6,7 +6,7 @@
   <title>Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet" >
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -14,34 +14,40 @@
 
   <header class="main-header">
     <nav class="header-navigation">
-     <img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарт"> 
-     
-      <input class="search" type="search" name="Поиск" placeholder="Поиск">
+      <div class="container">
+        <div class="nav">
+          <img src="img/logo-techno.png" class="logo-techno" width="220" height="47" alt="Логотип Техномарт">
+          <input class="search" type="search" name="Поиск" placeholder="Поиск">
 
-      <ul class="user-navigation list-style">
-        <li>
-          <a href="bookmarks.html"> Закладки</a>
-        </li>
-        <li>
-          <a href="basket.html" class="basket"> Корзина</a>
-        </li>
-        <li>
-          <a href="request.html" class="header-order">Оформить заказ</a>
-        </li>
-      </ul>
-
-      <div class="header-wraper"></div>
-      <p class="lead">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-
-      <div class="contacts">
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p>г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
+          <ul class="user-navigation list-style">
+            <li>
+              <a href="bookmarks.html" class="bookmarks">Закладки</a>
+            </li>
+            <li>
+              <a href="basket.html" class="basket">Корзина</a>
+            </li>
+            <li>
+              <a href="request.html" class="header-order">Оформить заказ</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <ul class="registration list-style">
-        <li><a href="login.html">Войти</a></li>
-        <li><a href="reg.html">Регистрация</a></li>
-      </ul>
+    <div class="container">
+      <div class="header-info">
+        <p class="lead">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
+
+        <div class="contacts">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p>г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
+        </div>
+
+        <ul class="registration list-style">
+          <li><a href="login.html" class="sign-in">Войти</a></li>
+          <li><a href="reg.html" class="sign-up">Регистрация</a></li>
+        </ul>
+      </div>
 
       <ul class="site-navigation list-style">
         <li><a href="main.html">Главная</a></li>
@@ -52,92 +58,106 @@
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
-      </nav>
-    </nav>
+    </div>
     </div>
   </header>
 
-  <section class="about">
-    <h2>Компания &quot;Техномарт&quot;</h2>
-    <p> Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-      равнодушными любителей сэкономить на гастарбайтерах.</p>
-    <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
-      компаниями:</p>
+  <div class="container">
+    <div class="company-info">
+      <section class="about">
+        <h2>Компания &quot;Техномарт&quot;</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+          равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими
+          транспортными
+          компаниями:</p>
 
-    <ul class="transport-list list-style">
-      <li>Деловые линии</li>
-      <li>Автотрейдинг</li>
-      <li>ЖелДорЭкспедиция</li>
-    </ul>
-    <a class="button button-primary" href="details.html"> Подробнее о компании</a>
-  </section>
+        <ul class="transport-list list-style">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="button button-primary" href="details.html"> Подробнее о компании</a>
+      </section>
 
-  <section class="contact-map">
-    <h2>Контакты</h2>
-    <p>Вы можете забрать товар сами,заехав в наш офис:</p>
-    <img src="img/map.jpg" width="300" height="158" alt="Карта">
-    <a class="button button-primary" href="write-to-us.html">Заблудились? Напишите нам!</a>
-  </section>
+      <section class="contact-map">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
+        <img src="img/map.jpg" width="300" height="158" alt="Карта">
+        <a class="button button-primary" href="write-to-us.html">Заблудились? Напишите нам!</a>
+      </section>
+    </div>
+  </div>
 
   <footer class="main-footer">
-    <div class="footer-top">
-      <!-- <img src="img/footer.logo.png" width="780" height="230" alt="Логотип Техномарт"> -->
-      <span class="logo">Техномарт</span>
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo-footer">
+          <img src="img/footer-logo@2x.png" width="220" height="68" alt="Логотип Техномарт">
+        </div>
 
-      <nav class="footer-navigation">
-        <ul class="list-style">
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
+        <nav class="footer-navigation">
+          <ul class="list-style">
+            <li><a href="company.html">Компания</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
 
-    <div class="footer-middle">
-      <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
+      <div class="footer-middle">
+        <div class="footer-contacts">
+          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
+        </div>
 
-      <nav class="footer-navigation footer-navigation-yellow">
-        <ul class="list-style">
-          <li><a href="material.html">Материалы</a></li>
-          <li><a href="equipment.html">Техника</a></li>
-          <li><a href="tool.html">Инструмент</a></li>
-          <li><a href="special-offers.html">Спецпредложения</a></li>
-        </ul>
-      </nav>
+        <nav class="footer-navigation footer-navigation-yellow">
+          <ul class="list-style">
+            <li><a href="material.html">Материалы</a></li>
+            <li><a href="equipment.html">Техника</a></li>
+            <li><a href="tool.html">Инструмент</a></li>
+            <li><a href="special-offers.html">Спецпредложения</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
     <div class="footer-bottom">
-      <p class="copyright">&#169; 2010–2017 Компания &quot;Техномарт&quot; Все права защищены</p>
+      <div class="footer-container container">
+        <p class="copyright">&#169; 2010–2017 Компания &quot;Техномарт&quot;<br> Все права защищены</p>
 
-      <ul class="social-block list-style">
-        <li>
-          <a class="social-button" href="https://vk.com" target="_blank">
-            <img src="img/icon-vk.svg" alt="ВКонтакте" width="26" height="15">
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="https://www.facebook.com" target="_blank">
-            <img src="img/icon-fb.svg" alt="Фейсбук" width="12" height="22">
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="https://www.instagram.com" target="_blank">
-            <img src="img/icon-insta.svg" alt="Инстаграм" width="21" height="21">
-          </a>
-        </li>
-      </ul>
+        <ul class="social-block list-style">
+          <li>
+            <a class="social-button" href="https://vk.com" target="_blank">
+              <img src="img/icon-vk.svg" alt="ВКонтакте" width="26" height="15">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="https://www.facebook.com" target="_blank">
+              <img src="img/icon-fb.svg" alt="Фейсбук" width="12" height="22">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="https://www.instagram.com" target="_blank">
+              <img src="img/icon-insta.svg" alt="Инстаграм" width="21" height="21">
+            </a>
+          </li>
+        </ul>
 
-      <p class="support">
-        Обратная связь:
-        <a href="mailto:htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
-      <p class="creator">
-        Разработано &mdash;
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-      </p>
+        <div class="made">
+          <p class="support">
+            Обратная связь:
+            <a href="mailto:htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="creator">
+            Разработано &mdash;
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </p>
+        </div>
+      </div>
+    </div>
     </div>
   </footer>
 
@@ -157,13 +177,12 @@
         <textarea id="user-post" placeholder="В свободной форме"></textarea>
       </p>
       <div class="modal-footer">
-      <button type="submit" class="modal-button button button-primary">отправить</button>
-    </div>
-  </div>
-  </form>
+        <button type="submit" class="modal-button button button-primary">отправить</button>
+      </div>
+    </form>
 
-  <div class="modal-map">
-  </div>
+    <div class="modal-map">
+    </div>
 
 </body>
 
